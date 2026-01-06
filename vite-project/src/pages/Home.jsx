@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import AboutSection from "../components/AboutSection";
 
-// ✅ Images import
+
 import banner1 from "../assets/images/banner1.jpg";
 import banner2 from "../assets/images/banner2.jpg";
 import banner3 from "../assets/images/banner3.jpg";
@@ -53,7 +54,7 @@ const Home = () => {
   return (
     <>
 
-    <section className="relative w-full h-[85vh] overflow-hidden">
+    <section className="relative w-full h-[100vh] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -84,8 +85,7 @@ const Home = () => {
       ))}
     </section>
     
-
-   {/* Future sections yahan add kar sakte ho */}
+<AboutSection />
 
     </>
   );
@@ -97,4 +97,3 @@ export default Home;
 
      
    
-

@@ -1,5 +1,7 @@
+import AboutSection from "../components/AboutSection";
+
 const About = () => {
-  return <h1 className="text-3xl text-center mt-10">About Us</h1>;
+  return <AboutSection showFull={true} />;
 };
 
 export default About;
