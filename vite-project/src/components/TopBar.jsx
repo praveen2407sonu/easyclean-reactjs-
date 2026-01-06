@@ -10,24 +10,26 @@ import {
 
 const TopBar = () => {
   return (
-    <div className="w-full  text-sm">
+    // Mobile hide | md & above show
+    <div className="w-full text-sm hidden md:block">
       <div className="max-w-7xl mx-auto px-4 py-2">
-
         {/* Wrapper */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-
+          
           {/* LEFT SIDE: Address */}
           <div className="flex items-center gap-2">
-            <FaMapMarkerAlt className="text-orange-400" />
-            <span>Jaipur, Rajasthan, India</span>
+            <FaMapMarkerAlt className="hover:text-orange-400" />
+            <span>
+              61/106-107, Rajat path, Sector 5, Mansarover, Jaipur, Rajasthan
+            </span>
           </div>
 
-          {/* RIGHT SIDE: Email + Social Icons + Phone */}
+          {/* RIGHT SIDE */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 md:justify-end w-full md:w-auto">
 
             {/* Email */}
             <div className="flex items-center gap-2">
-              <FaEnvelope className="text-orange-400" />
+              <FaEnvelope className="hover:text-orange-400" />
               <span>easyclean@gmail.com</span>
             </div>
 

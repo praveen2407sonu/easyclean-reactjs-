@@ -22,6 +22,9 @@ const Header = () => {
     { name: "Contact Us", path: "/contact" },
   ];
 
+
+
+
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4">
