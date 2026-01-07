@@ -5,17 +5,18 @@ const AboutSection = ({ showFull = false }) => {
     <section className="w-full bg-gradient-to-r from-blue-50 to-orange-50 py-16 md:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-        {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-14">
-          <span className="text-blue-600">About</span>{" "}
-          <span className="text-orange-400">Us</span>
-        </h2>
-
         {/* Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
 
           {/* Left Content */}
           <div className="text-center md:text-left">
+
+            {/* Heading moved here */}
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+              <span className="text-blue-600">About</span>{" "}
+              <span className="text-orange-400">Us</span>
+            </h2>
+
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-gray-800">
               We Provide{" "}
               <span className="text-orange-400">Professional</span> &{" "}
@@ -38,32 +39,17 @@ const AboutSection = ({ showFull = false }) => {
               <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
                 With years of industry experience, our mission is to exceed
                 customer expectations through dedication, professionalism, and
-                and consistent quality service.
+                consistent quality service.
               </p>
             )}
-
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
-              <button className="bg-orange-400 hover:bg-orange-500 text-white px-7 py-3 font-semibold rounded-md shadow-md transition">
-                Our Services
-              </button>
-
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 font-semibold rounded-md shadow-md transition">
-                Contact Us
-              </button>
-            </div>
           </div>
 
           {/* Right Image */}
           <div className="relative flex justify-center items-center mt-8 md:mt-0">
 
-            {/* Blue Shape (hide on small screens) */}
             <div className="hidden sm:block absolute -top-8 -left-8 w-[85%] h-[85%] bg-blue-600 rounded-[60%_40%_55%_45%] opacity-20"></div>
-
-            {/* Orange Shape (hide on small screens) */}
             <div className="hidden sm:block absolute -bottom-8 -right-8 w-[85%] h-[85%] bg-orange-400 rounded-[45%_55%_40%_60%] opacity-30"></div>
 
-            {/* Main Image */}
             <img
               src={aboutImg}
               alt="About Cleaning Service"

@@ -71,7 +71,7 @@ const Footer = () => {
             </p>
 
            <p className="flex items-center gap-3 text-sm">
-    <MdEmail className="text-blue-600 text-xl" />
+    <MdEmail className=" text-xl" />
     urbanhands100@gmail.com
   </p>
 
@@ -86,7 +86,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="bg-blue-100 text-center py-4 text-sm text-gray-600">
-        copyright © 2025, All rights reserved |{" "}
+        copyright © 2026, All rights reserved |{" "}
         <span className="font-semibold text-blue-700">
           Easy Clean Cleaning Services
         </span>
