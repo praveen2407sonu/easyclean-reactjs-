@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import AboutSection from "../components/AboutSection";
 import Footer from "../components/Footer";
 import ServicesSection from "../components/ServicesSection";
+import WhyChooseUs from "../components/WhyChooseUs";
+
 import banner1 from "../assets/images/banner1.jpg";
 import banner2 from "../assets/images/banner2.jpg";
 import banner3 from "../assets/images/banner3.jpg";
@@ -87,6 +89,7 @@ const Home = () => {
     
 <AboutSection />
 <ServicesSection />
+ <WhyChooseUs />
 <Footer/>
     </>
   );
