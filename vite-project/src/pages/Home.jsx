@@ -9,7 +9,9 @@ import banner2 from "../assets/images/banner2.jpg";
 import banner3 from "../assets/images/banner3.jpg";
 import banner4 from "../assets/images/banner4.jpg";
 import banner5 from "../assets/images/banner5.jpg";
-
+import OurMilestones from "../components/OurMilestones";
+import Testimonials from "../components/Testimonials";
+import InquiryForm from "../components/InquiryForm";
 const slides = [
   {
     id: 1,
@@ -90,6 +92,9 @@ const Home = () => {
 <AboutSection />
 <ServicesSection />
  <WhyChooseUs />
+ <OurMilestones />
+ <Testimonials />
+ <InquiryForm />
 <Footer/>
     </>
   );

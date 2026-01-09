@@ -6,6 +6,8 @@ import {
   FaLeaf,
   FaStar,
   FaUsers,
+  FaCheckCircle,
+  FaPhoneAlt,
 } from "react-icons/fa";
 
 const WhyChooseUs = () => {
@@ -27,18 +29,18 @@ const WhyChooseUs = () => {
     },
     {
       icon: <FaLeaf className="text-5xl text-green-600 mb-4" />,
-      title: "Eco-Friendly",
+      title: "Eco-Friendly Cleaning",
       desc: "We use safe and environmentally friendly cleaning solutions.",
     },
     {
       icon: <FaStar className="text-5xl text-yellow-500 mb-4" />,
-      title: "Top Rated Service",
+      title: "Top Rated Company",
       desc: "Rated 5★ by hundreds of satisfied customers.",
     },
     {
       icon: <FaUsers className="text-5xl text-indigo-600 mb-4" />,
-      title: "Trusted by Many",
-      desc: "Serving homes & offices with long-term client trust.",
+      title: "Trusted & Insured",
+      desc: "Fully insured service trusted by homes & businesses.",
     },
   ];
 
@@ -47,11 +49,11 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-4">
-          Why <span className="text-orange-500">Choose</span>  Us
+          Why <span className="text-orange-500">Choose</span> Us
         </h2>
         <p className="text-center text-gray-600 mb-20 max-w-3xl mx-auto text-lg">
-          Discover why our clients trust us for professional home & office
-          cleaning services.
+          We deliver reliable, affordable & high-quality cleaning services you
+          can trust.
         </p>
 
         {/* Feature Cards */}
@@ -72,21 +74,44 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        {/* Stats Section */}
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-          <div className="bg-white/70 backdrop-blur rounded-xl p-8 border border-blue-100">
-            <h3 className="text-5xl font-bold text-blue-600">500+</h3>
-            <p className="text-gray-600 mt-2 text-lg">Happy Clients</p>
-          </div>
-          <div className="bg-white/70 backdrop-blur rounded-xl p-8 border border-blue-100">
-            <h3 className="text-5xl font-bold text-indigo-600">10+</h3>
-            <p className="text-gray-600 mt-2 text-lg">Years Experience</p>
-          </div>
-          <div className="bg-white/70 backdrop-blur rounded-xl p-8 border border-blue-100">
-            <h3 className="text-5xl font-bold text-sky-600">100%</h3>
-            <p className="text-gray-600 mt-2 text-lg">
-              Satisfaction Guarantee
-            </p>
+        {/* How We Work Section (NEW – Milestones se different) */}
+        <div className="mt-24 bg-white rounded-2xl shadow-lg p-12 border border-blue-100">
+          <h3 className="text-3xl font-bold text-center mb-10">
+            How We Work
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <FaPhoneAlt className="text-4xl text-blue-600 mx-auto mb-4" />
+              <h4 className="font-semibold text-lg mb-2">Book Service</h4>
+              <p className="text-gray-600">
+                Contact us & schedule your cleaning easily.
+              </p>
+            </div>
+
+            <div>
+              <FaCheckCircle className="text-4xl text-green-600 mx-auto mb-4" />
+              <h4 className="font-semibold text-lg mb-2">Get Confirmation</h4>
+              <p className="text-gray-600">
+                We confirm time, service & requirements.
+              </p>
+            </div>
+
+            <div>
+              <FaUsers className="text-4xl text-indigo-600 mx-auto mb-4" />
+              <h4 className="font-semibold text-lg mb-2">Expert Cleaning</h4>
+              <p className="text-gray-600">
+                Our team delivers professional deep cleaning.
+              </p>
+            </div>
+
+            <div>
+              <FaRegSmile className="text-4xl text-orange-500 mx-auto mb-4" />
+              <h4 className="font-semibold text-lg mb-2">Enjoy Clean Space</h4>
+              <p className="text-gray-600">
+                Relax & enjoy a fresh, spotless environment.
+              </p>
+            </div>
           </div>
         </div>
       </div>

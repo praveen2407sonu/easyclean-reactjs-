@@ -16,18 +16,78 @@ import img12 from "../assets/images/service13.jpg";
 
 /* ================= SERVICES DATA ================= */
 const services = [
-  { name: "Anti-Bird Net", image: img1, popular: false },
-  { name: "Green Curtains / Net", image: img2, popular: true },
-  { name: "Pest Control", image: img3, popular: true },
-  { name: "Deep Cleaning", image: img4, popular: false },
-  { name: "Floor Cleaning", image: img5, popular: true },
-  { name: "Glass Cleaning", image: img6, popular: false },
-  { name: "Swimming Pool Cleaning", image: img7, popular: false },
-  { name: "Upholstery Cleaning", image: img8, popular: true },
-  { name: "Water Tank Cleaning", image: img9, popular: true },
-  { name: "AC Services", image: img10, popular: true },
-  { name: "RO / Water Purifier", image: img11, popular: false },
-  { name: "Car Cleaning", image: img12, popular: false },
+  {
+    name: "Anti-Bird Net",
+    image: img1,
+    popular: false,
+    description: "Protect your balcony or terrace from birds with our durable nets.",
+  },
+  {
+    name: "Green Curtains / Net",
+    image: img2,
+    popular: true,
+    description: "Eco-friendly green nets for homes and offices, enhancing aesthetics.",
+  },
+  {
+    name: "Pest Control",
+    image: img3,
+    popular: true,
+    description: "Keep your home pest-free with safe and effective pest control.",
+  },
+  {
+    name: "Deep Cleaning",
+    image: img4,
+    popular: false,
+    description: "Thorough deep cleaning for a spotless and hygienic home.",
+  },
+  {
+    name: "Floor Cleaning",
+    image: img5,
+    popular: true,
+    description: "Professional floor cleaning services for all types of flooring.",
+  },
+  {
+    name: "Glass Cleaning",
+    image: img6,
+    popular: false,
+    description: "Crystal-clear glass cleaning for windows, doors, and panels.",
+  },
+  {
+    name: "Swimming Pool Cleaning",
+    image: img7,
+    popular: false,
+    description: "Keep your pool sparkling clean and safe for swimming.",
+  },
+  {
+    name: "Upholstery Cleaning",
+    image: img8,
+    popular: true,
+    description: "Revive sofas, chairs, and other furniture with our expert cleaning.",
+  },
+  {
+    name: "Water Tank Cleaning",
+    image: img9,
+    popular: true,
+    description: "Ensure safe drinking water with our professional tank cleaning.",
+  },
+  {
+    name: "AC Services",
+    image: img10,
+    popular: true,
+    description: "Maintain your AC for optimal cooling and air quality.",
+  },
+  {
+    name: "RO / Water Purifier",
+    image: img11,
+    popular: false,
+    description: "Keep your RO systems clean for pure and safe drinking water.",
+  },
+  {
+    name: "Car Cleaning",
+    image: img12,
+    popular: false,
+    description: "Complete car cleaning for interior and exterior detailing.",
+  },
 ];
 
 /* ================= COMPONENT ================= */
@@ -39,13 +99,12 @@ const ServicesSection = () => {
         {/* ================= HEADING ================= */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Premium Home Services On Demand
+            Premium Home <span className="text-orange-500">Services </span>
+              On Demand
           </h2>
           <p className="text-gray-600 mt-3">
             Book trained professionals for all your home maintenance needs.
-            <span className="font-semibold text-orange-500">
-              {" "}100% quality guaranteed.
-            </span>
+            <span className="font-semibold text-orange-500"> 100% quality guaranteed.</span>
           </p>
         </div>
 
@@ -54,7 +113,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden"
+              className="relative bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden flex flex-col"
             >
               {/* Popular Badge */}
               {service.popular && (
@@ -71,40 +130,36 @@ const ServicesSection = () => {
               />
 
               {/* Title */}
-              <div className="p-4 text-center">
-                <h3 className="text-sm font-semibold text-gray-800">
-                  {service.name}
-                </h3>
+              <div className="p-4 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-800 mb-2">
+                    {service.name}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    {service.description}
+                  </p>
+                </div>
+
+                {/* Buttons */}
+                <div className="flex gap-3">
+                  <a
+                    href="https://wa.me/1234567890" // WhatsApp number
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center bg-green-500 hover:bg-green-600 text-white font-semibold px-3 py-2 rounded-lg transition"
+                  >
+                    WhatsApp
+                  </a>
+                  <NavLink
+                    to="/contact"
+                    className="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold px-3 py-2 rounded-lg transition"
+                  >
+                    Contact
+                  </NavLink>
+                </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* ================= BOTTOM BUTTONS ================= */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-12">
-          <NavLink
-            to="/services"
-            className="px-8 py-3 text-lg font-semibold rounded-lg
-               border-2 border-orange-400 text-orange-500
-               bg-transparent
-               hover:bg-orange-400 hover:text-white
-               hover:shadow-xl
-               transition-all duration-300 ease-in-out"
-          >
-            Our Services
-          </NavLink>
-
-          <NavLink
-            to="/contact"
-            className="px-8 py-3 text-lg font-semibold rounded-lg
-               border-2 border-orange-400 text-orange-500
-               bg-transparent
-               hover:bg-orange-400 hover:text-white
-               hover:shadow-xl
-               transition-all duration-300 ease-in-out"
-          >
-            Contact Us
-          </NavLink>
         </div>
 
       </div>

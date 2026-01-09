@@ -62,7 +62,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold">Our Address</h4>
                   <p className="text-blue-100">
-                    123 Cleaning Street, Your City
+                    60/106-107, Rajat path ,sector 5,Mansrover, jaipur 
                   </p>
                 </div>
               </div>
