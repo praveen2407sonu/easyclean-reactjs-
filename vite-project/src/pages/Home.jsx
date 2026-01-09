@@ -3,6 +3,7 @@ import AboutSection from "../components/AboutSection";
 import Footer from "../components/Footer";
 import ServicesSection from "../components/ServicesSection";
 import WhyChooseUs from "../components/WhyChooseUs";
+import CleaningServices from "../components/CleaningServices";
 
 import banner1 from "../assets/images/banner1.jpg";
 import banner2 from "../assets/images/banner2.jpg";
@@ -12,6 +13,8 @@ import banner5 from "../assets/images/banner5.jpg";
 import OurMilestones from "../components/OurMilestones";
 import Testimonials from "../components/Testimonials";
 import InquiryForm from "../components/InquiryForm";
+import TopLocalities from "../components/TopLocalities";
+
 const slides = [
   {
     id: 1,
@@ -95,6 +98,8 @@ const Home = () => {
  <OurMilestones />
  <Testimonials />
  <InquiryForm />
+<TopLocalities />
+<CleaningServices />
 <Footer/>
     </>
   );
