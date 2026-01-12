@@ -20,7 +20,7 @@ const Header = () => {
     { name: "Gallery", path: "/gallery" },
     { name: "Career", path: "/career" },
     { name: "Contact Us", path: "/contact" },
-  ];
+  ];    
 
 
 
@@ -33,11 +33,17 @@ const Header = () => {
         <div className="flex items-center justify-between">
 
           {/* Logo */}
-          <img
-            src={logo}
-            alt="Logo"
-            className="h-18 w-auto scale-110 hover:scale-125 transition-transform duration-300 cursor-pointer"
-          />
+         
+        <NavLink to="/">
+        <img
+         src={logo}
+         alt="Logo"
+         className="h-18 w-auto scale-110 hover:scale-125 transition-transform duration-300 cursor-pointer"
+       />
+      </NavLink>
+
+
+
 
           {/* Hamburger Button */}
           <button

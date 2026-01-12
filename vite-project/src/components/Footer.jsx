@@ -11,7 +11,7 @@ import { MdEmail, MdPhone } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-50 text-gray-700">
+    <footer className="bg-blue-200 ">
       <div className="max-w-7xl mx-auto px-6 py-14">
 
         {/* Top Footer */}
@@ -32,50 +32,50 @@ const Footer = () => {
 
           {/* Social Networks */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-blue-700">
+            <h3 className="text-2xl font-semibold mb-4 text-blue-700">
               Social Networks
             </h3>
 
             <ul className="space-y-3">
-              <li className="flex items-center gap-3 hover:text-orange-400 transition">
-                <FaFacebookF className="text-blue-600" />
-                Facebook
+              <li className="flex items-center gap-3 hover:text-orange-500 transition">
+                <FaFacebookF className="text-blue-600 text-xl"/>
+               <span className="text-xl"> Facebook</span>
               </li>
 
               <li className="flex items-center gap-3 hover:text-orange-400 transition">
-                <FaInstagram className="text-pink-500" />
-                insta_account
+                <FaInstagram className="text-pink-500 text-xl" />
+               <span>insta_account</span> 
               </li>
 
               <li className="flex items-center gap-3 hover:text-orange-400 transition">
-                <FaYoutube className="text-red-600" />
-                YouTube
+                <FaYoutube className="text-red-600 text-xl"/>
+               <span>YouTube</span> 
               </li>
 
               <li className="flex items-center gap-3 hover:text-orange-400 transition">
-                <FaWhatsapp className="text-green-500" />
-                Whatsapp
+                <FaWhatsapp className="text-green-500 text-xl" />
+               <span>Whatsapp</span> 
               </li>
             </ul>
           </div>
 
           {/* Contact Section */}
           <div className="space-y-3">
-            <h3 className="text-lg font-semibold mb-4 text-blue-700">
+            <h3 className="text-2xl font-semibold mb-4 text-blue-700">
               Contact Us
             </h3>
           
-            <p className="text-sm mb-3 leading-relaxed">
+            <p className="text-lg mb-3 leading-relaxed">
               Shop no. 12, Plot 71, Chitrakoot Marg, Shalimar Bagh Colony,
               Tagore Nagar, Jaipur, Rajasthan 302021
             </p>
 
-           <p className="flex items-center gap-3 text-sm">
-    <MdEmail className=" text-xl" />
+           <p className="flex items-center gap-3 text-lg">
+    <MdEmail className=" " />
     urbanhands100@gmail.com
   </p>
 
-  <p className="flex items-center gap-3 text-sm">
+  <p className="flex items-center gap-3 ">
     <MdPhone className="text-green-600 text-xl" />
     +91-9257262464
   </p>
