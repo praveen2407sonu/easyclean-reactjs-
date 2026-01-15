@@ -12,7 +12,7 @@ const TopBar = () => {
   return (
     // Mobile hide | md & above show
     <div className="w-full text-sm hidden md:block">
-      <div className="max-w-7xl mx-auto px-4 py-2">
+      <div className="max-w-7xl mx-auto px-4 py-1">
         {/* Wrapper */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
           

@@ -37,50 +37,56 @@ const Contact = () => {
 
   return (
     <>
-      {/* Background */}
+      {/* Background / Hero */}
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 flex items-center justify-center px-4 py-16">
 
         {/* Main Card */}
         <div className="max-w-6xl w-full bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
 
           {/* LEFT SECTION – Contact Info */}
-          <div className="bg-[#9baac8fa] text-white p-10 flex flex-col justify-center">
-            <h2 className="text-3xl font-bold mb-6 text-orange-600">
-              Get In Touch
-            </h2>
+          <div className="bg-gradient-to-br from-blue-700 to-blue-900 text-white p-4  flex flex-col justify-center h-full">
+            <div className="mb-8">
+              <h2 className="text-3xl font-bold mb-4 text-orange-500">
+                Get In Touch
+              </h2>
 
-            <p className="text-blue-100 mb-10">
-              Have questions or need cleaning services?  
-              Contact us anytime and our team will be happy to help you.
-            </p>
+              <p className="text-blue-100 mb-8 text-lg">
+                Have questions or need cleaning services?  
+                Contact us anytime and our team will be happy to help you.
+              </p>
+            </div>
 
             {/* Info Items */}
-            <div className="space-y-6">
+            <div className="space-y-8">
 
               <div className="flex items-start gap-4">
-                <span className="text-2xl">📍</span>
+                <div className="bg-blue-600/20 p-3 rounded-full">
+                  <span className="text-xl text-white">📍</span>
+                </div>
                 <div>
-                  <h4 className="font-semibold">Our Address</h4>
+                  <h4 className="font-semibold text-lg mb-1">Our Address</h4>
                   <p className="text-blue-100">
-                    60/106-107, Rajat path ,sector 5,Mansrover, jaipur 
+                    60/106-107, Rajat path ,sector 5,Mansrover, Jaipur
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <span className="text-2xl">📞</span>
+                <div className="bg-blue-600/20 p-3 rounded-full">
+                  <span className="text-xl text-white">📞</span>
+                </div>
                 <div>
-                  <h4 className="font-semibold">Call Us</h4>
-                  <p className="text-blue-100">
-                    +91 98765 43210
-                  </p>
+                  <h4 className="font-semibold text-lg mb-1">Call Us</h4>
+                  <p className="text-blue-100">+91 98765 43210</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <span className="text-2xl">⏰</span>
+                <div className="bg-blue-600/20 p-3 rounded-full">
+                  <span className="text-xl text-white">⏰</span>
+                </div>
                 <div>
-                  <h4 className="font-semibold">Working Hours</h4>
+                  <h4 className="font-semibold text-lg mb-1">Working Hours</h4>
                   <p className="text-blue-100">
                     Mon – Sat: 9:00 AM – 7:00 PM
                   </p>
@@ -91,14 +97,15 @@ const Contact = () => {
           </div>
 
           {/* RIGHT SECTION – Contact Form */}
-          <div className="p-10">
-
-            <h1 className="text-3xl font-bold text-blue-600 mb-2">
-              Contact Us
-            </h1>
-            <p className="text-gray-600 mb-8">
-              Book professional home & office cleaning services
-            </p>
+          <div className="p-10 flex flex-col justify-center h-full">
+            <div className="mb-8">
+              <h1 className="text-3xl font-bold text-blue-600 mb-2">
+                Contact Us
+              </h1>
+              <p className="text-gray-600">
+                Book professional home & office cleaning services
+              </p>
+            </div>
 
             {submitted && (
               <p className="text-green-600 mb-6 font-semibold">
@@ -153,6 +160,7 @@ const Contact = () => {
 
             </form>
           </div>
+
         </div>
       </div>
 

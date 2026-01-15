@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
 
   return (
     <section className="bg-gradient-to-b from-blue-50 via-sky-50 to-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 pt-[5px]">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-4">
           Why <span className="text-orange-500">Choose</span> Us

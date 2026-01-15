@@ -4,17 +4,13 @@ const Career = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className=" h-[60vh] relative">
-        <div className="absolute inset-0 bg-blue-500 flex items-center justify-center">
-          <div className="text-center  px-6">
-            <h1 className="text-orange-500 text-4xl md:text-5xl font-bold mb-4">
-              Careers
-            </h1>
-            <p className=" text-lg max-w-2xl text-white text-3xl">
-              Join our professional cleaning team and grow your future with us
-            </p>
-          </div>
-        </div>
+      <section className="bg-blue-600 py-24 text-center text-white">
+        <h1 className="text-5xl font-bold mb-4 text-orange-500">
+          Careers
+        </h1>
+        <p className="text-3xl max-w-2xl mx-auto">
+          Join our professional cleaning team and grow your future with us
+        </p>
       </section>
 
       {/* Career Content */}
@@ -59,7 +55,7 @@ const Career = () => {
             <div className="bg-white shadow-lg p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-2">Office Executive</h3>
               <p className="text-gray-600 mb-4">
-                Handle calls, bookings & customer coordination.
+                Handle calls, bookings & customer <br /> coordination.
               </p>
               <ul className="text-sm text-gray-500 mb-4 list-disc list-inside">
                 <li>Experience: 1–3 Years</li>

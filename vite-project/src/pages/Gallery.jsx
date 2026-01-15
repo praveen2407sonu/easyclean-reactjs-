@@ -1,4 +1,3 @@
-
 import home from "../assets/images/service5.jpg";
 import office from "../assets/images/service10.jpg";
 import kitchen from "../assets/images/service4.jpg";
@@ -14,14 +13,14 @@ import bathroomafter from "../assets/images/bathroom-after.jpg";
 
 const Gallery = () => {
   const images = [
-    { src: home, title: "Home Cleaning" },
-    { src: office, title: "Office Cleaning" },
-    { src: kitchen, title: "Kitchen Cleaning" },
-    { src: bathroom, title: "Bathroom Cleaning" },
-    { src: sofa, title: "Sofa Cleaning" },
-    { src: floor, title: "Floor Cleaning" },
-    { src: bedroom, title: "Bedroom Cleaning" },
-    { src: glass, title: "Glass Cleaning" },
+    { src: home },
+    { src: office },
+    { src: kitchen },
+    { src: bathroom },
+    { src: sofa },
+    { src: floor },
+    { src: bedroom },
+    { src: glass },
   ];
 
   const videos = [
@@ -43,7 +42,7 @@ const Gallery = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 py-20">
+      <div className="max-w-7xl mx-auto px-4 py-10">
 
         {/* Image Gallery */}
         <h2 className="text-3xl font-semibold text-gray-800 mb-12 text-center">
@@ -58,79 +57,71 @@ const Gallery = () => {
             >
               <img
                 src={item.src}
-                alt={item.title}
+                alt={`Gallery ${index + 1}`}
                 className="w-full h-56 object-cover"
               />
-              <div className="p-5 text-center">
-                <h3 className="text-lg font-semibold text-gray-700">
-                  {item.title}
-                </h3>
-              </div>
+              {/* Title removed */}
             </div>
           ))}
         </div>
        
+        {/* Before & After Gallery Section */}
+        <div className="mt-32">
+          <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
+            Before & After Cleaning
+          </h2>
 
+          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
+            See the difference our professional cleaning services make.
+            These before and after images show real results from our recent work.
+          </p>
 
-      {/* Before & After Gallery Section */}
-      <div className="mt-32">
-       <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
-       Before & After Cleaning
-       </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-      <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
-      See the difference our professional cleaning services make.
-      These before and after images show real results from our recent work.
-      </p>
+            {/* Item 1 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="grid grid-cols-2">
+                <img
+                  src={beforekitchen}
+                  alt="Before Cleaning"
+                  className="w-full h-64 object-cover"
+                />
+                <img
+                  src={afterkitchen}
+                  alt="After Cleaning"
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="text-lg font-semibold text-gray-700">
+                  Kitchen Deep Cleaning
+                </h3>
+              </div>
+            </div>
 
-     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Item 2 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="grid grid-cols-2">
+                <img
+                  src={bathroombefore}
+                  alt="Before Cleaning"
+                  className="w-full h-64 object-cover"
+                />
+                <img
+                  src={bathroomafter}
+                  alt="After Cleaning"
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="text-lg font-semibold text-gray-700">
+                  Bathroom Cleaning
+                </h3>
+              </div>
+            </div>
 
-     {/* Item 1 */}
-     <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-      <div className="grid grid-cols-2">
-        <img
-          src={beforekitchen}
-          alt="Before Cleaning"
-          className="w-full h-64 object-cover"
-        />
-        <img
-          src={afterkitchen}
-          alt="After Cleaning"
-          className="w-full h-64 object-cover"
-        />
-      </div>
-      <div className="p-5 text-center">
-        <h3 className="text-lg font-semibold text-gray-700">
-          Kitchen Deep Cleaning
-        </h3>
-       </div>
-      </div>
-
-      {/* Item 2 */}
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-      <div className="grid grid-cols-2">
-        <img
-          src={bathroombefore}
-          alt="Before Cleaning"
-          className="w-full h-64 object-cover"
-        />
-        <img
-          src={bathroomafter}
-          alt="After Cleaning"
-          className="w-full h-64 object-cover"
-        />
-       </div>
-       <div className="p-5 text-center">
-        <h3 className="text-lg font-semibold text-gray-700">
-          Bathroom Cleaning
-        </h3>
-       </div>
-      </div>
-
-     </div>
-    </div>
-
-
+          </div>
+        </div>
 
         {/* Video Section */}
         <div className="mt-28">
@@ -154,11 +145,11 @@ const Gallery = () => {
               </div>
             ))}
           </div>
-          </div>
-
-         </div>
         </div>
-    );
-   };
+
+      </div>
+    </div>
+  );
+};
 
 export default Gallery;

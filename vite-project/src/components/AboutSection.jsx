@@ -4,6 +4,8 @@ const AboutSection = ({ showFull = false }) => {
   return (
     <section className="w-full bg-gradient-to-r from-blue-50 to-orange-50 py-16 md:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          
+          
 
         {/* Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
