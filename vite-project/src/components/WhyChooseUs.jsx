@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-blue-50 via-sky-50 to-white py-20">
+    <section className="bg-gradient-to-b from-blue-50 via-sky-50 to-white py-4">
       <div className="max-w-7xl mx-auto px-6 pt-[5px]">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-4">
@@ -75,7 +75,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* How We Work Section (NEW – Milestones se different) */}
-        <div className="mt-24 bg-white rounded-2xl shadow-lg p-12 border border-blue-100">
+        <div className="mt-10 bg-white rounded-2xl shadow-lg p-12 border border-blue-100">
           <h3 className="text-3xl font-bold text-center mb-10">
             How We Work
           </h3>

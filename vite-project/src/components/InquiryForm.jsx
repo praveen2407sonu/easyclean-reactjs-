@@ -29,7 +29,7 @@ const InquiryForm = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white py-20">
+    <section className="bg-gradient-to-b from-blue-50 to-white py-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">

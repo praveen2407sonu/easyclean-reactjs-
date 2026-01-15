@@ -54,7 +54,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-gradient-to-b  py-20">
+    <section className="bg-gradient-to-b  py-10">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}

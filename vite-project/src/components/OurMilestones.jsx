@@ -66,7 +66,7 @@ const OurMilestones = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-gradient-to-br from-gray-100 to-gray-200 py-20"
+      className="relative bg-gradient-to-br mt-6 from-gray-100 to-gray-200 py-10"
     >
       <div className="max-w-7xl mx-auto px-6 text-center">
         

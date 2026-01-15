@@ -17,7 +17,7 @@ const localities = [
 
 const TopLocalities = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="bg-gray-50 py-8 mt-5">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
